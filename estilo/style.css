@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    background-color: #0C0B0B;
+    color: #B7B7B7;
+}
+
+.quadro{
+    background-color: #0F0E0E;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+}
+
+.superior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nome-foto{
+    display: flex;
+    align-items: center;
+    
+}
+
+.foto img{
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.nome h1{
+    font-size: 32px;
+}
+
+.editar i{
+    font-size: 18px;
+    background-color: #242323;
+    padding: 10px;
+    border-radius: 5px; 
+}
+
+.editar i span{
+    font-family: 'Rubik', sans-serif;
+}
+
+.inferior{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.infos{
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.numero-info{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.projetos{
+    background-color: #046313;
+}
+
+.estrelas{
+    background-color: #044A7D;
+}
+
+.seguidores{
+    background-color: #725200;
+}
+
+@media(max-width: 1000px){
+    .inferior{
+        flex-direction: column;
+    }
+
+    .infos{
+        width: 100%;
+    }
+
+    .estrelas{
+        margin: 20px 0;
+    }
+
+    .superior{
+        flex-direction: column;
+    }
+
+    .nome-foto{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .editar i{
+        margin-top: 10px;
+    }
+}
